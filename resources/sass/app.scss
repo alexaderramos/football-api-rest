@@ -1,0 +1,88 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+
+
+
+// Import Bootstrap and BootstrapVue CSS files (order is important)
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~bootstrap-vue/dist/bootstrap-vue.css';
+
+
+
+.container-card {
+    //margin-top: 30px;
+    //display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-left: 32px;
+    margin-right: 32px;
+
+    .card-report {
+        position: relative;
+        width: 200px;
+        height: 227px;
+        background: #ffffff;
+        border: 1px solid #e9eefb;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 6px 2px #e9eefb;
+        border-radius: 6px;
+        //margin-right: 32px;
+        margin-top: 30px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-flow: column;
+        cursor: pointer;
+
+        .container-img {
+            padding-top: 21px;
+
+            img {
+                max-width: 123px !important;
+                max-height: 123px !important;
+            }
+        }
+
+        .title {
+            padding: 20px 24px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+
+            color: #424f62;
+        }
+    }
+}
+
+.card-battery {
+    &__image {
+        text-align: center;
+    }
+
+    &__title {
+        text-align: center;
+        color: #424F62;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 15px;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        margin-top: 8px;
+        color: #86A0D9;
+        cursor: pointer;
+    }
+}
+
